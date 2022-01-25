@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lj9-Hw-ndE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="vBU-Zo-DVh">
+            <objects>
+                <navigationController id="Lj9-Hw-ndE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C0U-tO-bQw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5GN-IW-g0G">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="ug3-GA-Cwe" kind="relationship" relationship="rootViewController" id="xgK-oY-xk6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MtG-2d-Kuh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-180" y="149"/>
+        </scene>
+        <!--Home Page-->
+        <scene sceneID="YwW-lN-lEp">
+            <objects>
+                <viewController interfaceStyle="light" id="ug3-GA-Cwe" customClass="WelcomeViewController" customModule="Test_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="u4c-AL-1LO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="50" id="Mi0-Mz-Fea">
+                                <rect key="frame" x="10" y="107" width="394" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="Logo" id="JlG-Rc-YAw">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="254"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" spacing="30" id="dZO-2T-sA3">
+                                        <rect key="frame" x="0.0" y="341.5" width="394" height="382.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="xaT-mJ-fCR">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="107.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" imagePadding="10">
+                                                    <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="medium" renderingMode="hierarchical">
+                                                        <hierarchicalColors>
+                                                            <color systemColor="systemGray4Color"/>
+                                                            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color systemColor="systemGray3Color"/>
+                                                        </hierarchicalColors>
+                                                    </imageReference>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" scale="large" weight="semibold"/>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Select File">
+                                                            <attributes>
+                                                                <font key="NSFont" size="24" name="DINCondensed-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="nml-sT-KyN" kind="show" id="SDN-Wj-KpX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dDf-XM-2Aa">
+                                                <rect key="frame" x="0.0" y="137.5" width="394" height="107.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" imagePadding="10">
+                                                    <imageReference key="image" image="camera" catalog="system" symbolScale="medium" renderingMode="hierarchical">
+                                                        <hierarchicalColors>
+                                                            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color systemColor="secondaryLabelColor"/>
+                                                            <color systemColor="tertiaryLabelColor"/>
+                                                        </hierarchicalColors>
+                                                    </imageReference>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50"/>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Record New">
+                                                            <attributes>
+                                                                <font key="NSFont" size="24" name="DINCondensed-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="RTQ-0c-DUd" kind="show" id="he1-XO-jCk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="aUD-KJ-pxy">
+                                                <rect key="frame" x="0.0" y="275" width="394" height="107.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" imagePadding="10">
+                                                    <imageReference key="image" image="clock" catalog="system" symbolScale="medium" renderingMode="hierarchical">
+                                                        <hierarchicalColors>
+                                                            <color systemColor="systemGray4Color"/>
+                                                            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color systemColor="tertiaryLabelColor"/>
+                                                        </hierarchicalColors>
+                                                    </imageReference>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50"/>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Previous Data">
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" size="24" name="DINCondensed-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3zK-Bi-GKZ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home Page" id="3jN-K0-gPe"/>
+                    <connections>
+                        <outlet property="LogoIcon" destination="JlG-Rc-YAw" id="XTS-Iw-kxZ"/>
+                        <outlet property="PreviousDataButton" destination="aUD-KJ-pxy" id="3Cc-fJ-OOF"/>
+                        <outlet property="RecordNewButton" destination="dDf-XM-2Aa" id="YXk-7h-LGu"/>
+                        <outlet property="SelectFileButton" destination="xaT-mJ-fCR" id="Ouj-KG-f9Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gpg-K6-bs2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="563.768115942029" y="148.66071428571428"/>
+        </scene>
+        <!--Record-->
+        <scene sceneID="WVj-1R-Snz">
+            <objects>
+                <viewController storyboardIdentifier="Record" interfaceStyle="dark" id="RTQ-0c-DUd" customClass="RecordNewViewController" customModule="Test_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="cZw-88-K5p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" spacing="5" id="31t-d5-9mR">
+                                <rect key="frame" x="20" y="106" width="374" height="761"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6m9-7i-4P4">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="663"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJc-65-PTC">
+                                        <rect key="frame" x="0.0" y="668" width="374" height="50"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <buttonConfiguration key="configuration" style="filled" imagePlacement="trailing" imagePadding="6" titleAlignment="center">
+                                            <imageReference key="image" image="camera.fill" catalog="system" symbolScale="large" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color systemColor="secondaryLabelColor"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Record">
+                                                    <attributes>
+                                                        <font key="NSFont" size="36" name="DINCondensed-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="takePhoto:" destination="RTQ-0c-DUd" eventType="touchUpInside" id="jV5-vH-ETy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQi-vE-ta1">
+                                        <rect key="frame" x="0.0" y="723" width="374" height="38"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" imagePlacement="trailing" imagePadding="0.0" titleAlignment="center">
+                                            <imageReference key="image" image="arrow.forward" catalog="system" symbolScale="large" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color systemColor="secondaryLabelColor"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Next">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="DINCondensed-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="71L-Ir-CpC" kind="show" id="dbL-wJ-Ab1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5r1-np-pdi"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5r1-np-pdi" firstAttribute="trailing" secondItem="31t-d5-9mR" secondAttribute="trailing" constant="20" id="f7k-HO-1Xh"/>
+                            <constraint firstItem="31t-d5-9mR" firstAttribute="leading" secondItem="5r1-np-pdi" secondAttribute="leading" constant="20" id="jBC-vl-nHg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Record" id="9fr-Kf-TbS"/>
+                    <connections>
+                        <outlet property="BackButton" destination="9fr-Kf-TbS" id="jGP-Qf-iIO"/>
+                        <outlet property="CameraDisplay" destination="6m9-7i-4P4" id="CT2-Yg-pMZ"/>
+                        <outlet property="OkButton" destination="aQi-vE-ta1" id="Iaq-Et-Mwv"/>
+                        <outlet property="RecordButton" destination="OJc-65-PTC" id="aB9-co-kSI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCV-QB-OvT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1653.6231884057972" y="579.24107142857144"/>
+        </scene>
+        <!--Photo Taken-->
+        <scene sceneID="397-jf-HhL">
+            <objects>
+                <viewController storyboardIdentifier="photoVC" interfaceStyle="light" id="rbM-05-5km" customClass="PhotoViewController" customModule="Test_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uS9-2c-LS9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XYj-1J-er7">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lGV-QT-ijb"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photo Taken" id="HNs-nz-605"/>
+                    <connections>
+                        <outlet property="imageView" destination="XYj-1J-er7" id="vS3-Ok-SLU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xy3-pp-3L9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2650.7246376811595" y="870.53571428571422"/>
+        </scene>
+        <!--Select Video-->
+        <scene sceneID="4yk-mw-2cD">
+            <objects>
+                <viewController interfaceStyle="light" id="nml-sT-KyN" customClass="SelectFileViewController" customModule="Test_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="yYi-MS-FDU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PnL-80-IDP">
+                                <rect key="frame" x="20" y="734" width="374" height="98"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7b-99-5cE">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <buttonConfiguration key="configuration" style="filled" imagePlacement="trailing" imagePadding="5" titleAlignment="center">
+                                            <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="large" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="semibold"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="SELECT VIDEO">
+                                                    <attributes>
+                                                        <font key="NSFont" size="36" name="DINCondensed-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OzR-f9-KO2">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRo-La-a9o">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="38"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" imagePlacement="trailing" titleAlignment="center">
+                                                    <imageReference key="image" image="arrow.forward" catalog="system" symbolScale="large" renderingMode="hierarchical">
+                                                        <hierarchicalColors>
+                                                            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color systemColor="secondaryLabelColor"/>
+                                                            <color systemColor="tertiaryLabelColor"/>
+                                                        </hierarchicalColors>
+                                                    </imageReference>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Next">
+                                                            <attributes>
+                                                                <font key="NSFont" size="24" name="DINCondensed-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="71L-Ir-CpC" kind="show" id="0f4-v4-dea"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DKh-Ni-Qjn">
+                                <rect key="frame" x="20" y="118" width="374" height="566"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4ZD-Jk-DQ7"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PnL-80-IDP" firstAttribute="top" secondItem="DKh-Ni-Qjn" secondAttribute="bottom" constant="50" id="IAf-Ar-tJs"/>
+                            <constraint firstItem="4ZD-Jk-DQ7" firstAttribute="trailing" secondItem="DKh-Ni-Qjn" secondAttribute="trailing" constant="20" id="QBY-j7-jhR"/>
+                            <constraint firstItem="4ZD-Jk-DQ7" firstAttribute="trailing" secondItem="PnL-80-IDP" secondAttribute="trailing" constant="20" id="SK2-26-Gip"/>
+                            <constraint firstItem="DKh-Ni-Qjn" firstAttribute="leading" secondItem="4ZD-Jk-DQ7" secondAttribute="leading" constant="20" id="cGc-sH-0cD"/>
+                            <constraint firstItem="PnL-80-IDP" firstAttribute="leading" secondItem="4ZD-Jk-DQ7" secondAttribute="leading" constant="20" id="cU6-vF-XJX"/>
+                            <constraint firstItem="DKh-Ni-Qjn" firstAttribute="top" secondItem="4ZD-Jk-DQ7" secondAttribute="top" constant="30" id="hyQ-zP-sx7"/>
+                            <constraint firstItem="4ZD-Jk-DQ7" firstAttribute="bottom" secondItem="PnL-80-IDP" secondAttribute="bottom" constant="30" id="uu1-ca-4Qt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select Video" id="wuW-HA-xyd"/>
+                    <connections>
+                        <outlet property="BackButton" destination="wuW-HA-xyd" id="hiP-HY-KAh"/>
+                        <outlet property="OkButton" destination="bRo-La-a9o" id="6tg-qw-dS4"/>
+                        <outlet property="SelectVideoButton" destination="V7b-99-5cE" id="rJW-l6-BeD"/>
+                        <outlet property="VideoDisplay" destination="DKh-Ni-Qjn" id="Vas-NS-WGg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Csr-cO-RNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1654" y="-129"/>
+        </scene>
+        <!--Patient Specification-->
+        <scene sceneID="Wgt-j3-ZQg">
+            <objects>
+                <viewController interfaceStyle="light" id="71L-Ir-CpC" customClass="PatientSpecificationViewController" customModule="Test_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="juD-5I-udi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" id="0bQ-dq-jyq">
+                                <rect key="frame" x="20" y="288" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ti2-TW-OEF">
+                                        <rect key="frame" x="0.0" y="0.0" width="199" height="374"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnH-pu-sW4">
+                                                <rect key="frame" x="64.5" y="0.0" width="70.5" height="25"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Patient ID">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="DINCondensed-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH8-m8-bWO">
+                                                <rect key="frame" x="83" y="174.5" width="33" height="25"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Date">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="DINCondensed-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeN-wa-7Mq">
+                                                <rect key="frame" x="47" y="349" width="105" height="25"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Expected BPM">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="DINCondensed-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="FAB-ae-8To">
+                                        <rect key="frame" x="199" y="0.0" width="175" height="374"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Patient #" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQY-Jk-Zg2">
+                                                <rect key="frame" x="0.0" y="0.0" width="175" height="26.5"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="name"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="MM/DD/YYYY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q4B-G4-BJl">
+                                                <rect key="frame" x="0.0" y="174" width="175" height="26.5"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="date-time"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Beats per Minute (ex:120)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjR-ri-94H">
+                                                <rect key="frame" x="0.0" y="347.5" width="175" height="26.5"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="031-aq-fJo"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" id="n7f-bj-myS">
+                                <rect key="frame" x="20" y="774" width="374" height="38"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANf-EY-j8t">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="38"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" titleAlignment="center">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Next">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="24" name="DINCondensed-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sKa-ow-TZm"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0bQ-dq-jyq" firstAttribute="leading" secondItem="sKa-ow-TZm" secondAttribute="leading" constant="20" id="Fma-mE-Fka"/>
+                            <constraint firstItem="sKa-ow-TZm" firstAttribute="trailing" secondItem="0bQ-dq-jyq" secondAttribute="trailing" constant="20" id="MAx-zw-cZv"/>
+                            <constraint firstItem="sKa-ow-TZm" firstAttribute="bottom" secondItem="n7f-bj-myS" secondAttribute="bottom" constant="50" id="RER-ta-Xey"/>
+                            <constraint firstItem="0bQ-dq-jyq" firstAttribute="top" secondItem="sKa-ow-TZm" secondAttribute="top" constant="200" id="Wf1-Iy-yWI"/>
+                            <constraint firstItem="sKa-ow-TZm" firstAttribute="bottom" secondItem="0bQ-dq-jyq" secondAttribute="bottom" constant="200" id="YDa-2D-wRp"/>
+                            <constraint firstItem="sKa-ow-TZm" firstAttribute="trailing" secondItem="n7f-bj-myS" secondAttribute="trailing" constant="20" id="e7q-EJ-86M"/>
+                            <constraint firstItem="n7f-bj-myS" firstAttribute="leading" secondItem="sKa-ow-TZm" secondAttribute="leading" constant="20" id="mz8-tK-byi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Patient Specification" leftItemsSupplementBackButton="YES" id="9ij-ii-B6A"/>
+                    <connections>
+                        <outlet property="BackButton" destination="9ij-ii-B6A" id="DZt-2Y-fca"/>
+                        <outlet property="DateLabel" destination="VH8-m8-bWO" id="j6q-pR-obf"/>
+                        <outlet property="DateTextField" destination="q4B-G4-BJl" id="7Qy-wj-ORm"/>
+                        <outlet property="ExpectedBPMLabel" destination="UeN-wa-7Mq" id="mGW-fQ-Ym2"/>
+                        <outlet property="ExpectedBPMTextField" destination="mjR-ri-94H" id="bNk-Qc-DDP"/>
+                        <outlet property="OkButton" destination="ANf-EY-j8t" id="8iG-bm-Z7c"/>
+                        <outlet property="PatientIDLabel" destination="pnH-pu-sW4" id="Pr6-pq-OoY"/>
+                        <outlet property="PatientIDTextField" destination="vQY-Jk-Zg2" id="Fdc-bs-ZsA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKx-Vd-DHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2650.7246376811595" y="148.66071428571428"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dbL-wJ-Ab1"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Logo" width="254" height="254"/>
+        <image name="arrow.forward" catalog="system" width="128" height="98"/>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
